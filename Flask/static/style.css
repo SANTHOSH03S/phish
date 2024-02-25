@@ -1,0 +1,158 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: sans-serif;
+  background-color: #e0dede;
+}
+.base {
+  font-family: 'Times New Roman', Times, serif;
+  color:black; 
+  background-color:rgb(95, 95, 236);
+  margin: 0;
+  height: 60px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+h2{
+  color: rgb(121, 116, 116);
+  font-size: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Header Styles */
+
+#header {
+  height: 60px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  padding: 0 20px;
+  position: relative; /* add a relative position to the header */
+}
+
+.head {
+  height: 100%;
+  line-height: 40px;
+  top: 50%; /* position the content 50% from the top */
+  transform: translateY(-5%); /* vertically center the content */
+}
+
+
+#navigate-to-home {
+  width: 30%;
+  text-align: left;
+}
+
+#project-name {
+  width: 40%;
+  text-align: center;
+}
+
+#logout {
+  width: 30%;
+  text-align: right;
+}
+
+#logout-link {
+  color: #fff;
+}
+
+#logout-link:hover {
+  color: #ccc;
+}
+
+/* Form Styles */
+
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-box {
+  position: relative;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 21px;
+  color: rgb(161, 156, 156);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #333;
+}
+
+.submit-but {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.submit-but button {
+  width: 130px;
+  background-color: rgb(59, 59, 240);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.submit-but button:hover {
+  background-color: #aba8c0;
+}
